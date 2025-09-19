@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMQ Сервер Minecraft 1.21.5 Fabric</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <button class="logo-btn" id="logo-btn">
+            <i class="fas fa-server"></i> REMQ
+        </button>
+    </header>
+
+    <main class="main-content">
+        <h1 class="welcome-text">Приветствую, на нашем сервере</h1>
+        
+        <div class="server-ip-container">
+            <div class="server-ip" id="server-ip">
+                tcp.cloudpub.ru:27271
+            </div>
+            <button class="copy-btn" id="copy-btn">
+                <i class="fas fa-copy"></i>
+            </button>
+        </div>
+
+        <div class="server-status" id="server-status">
+            <div class="status-loading">
+                <i class="fas fa-spinner fa-spin"></i> Проверка статуса сервера...
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="close-button" id="close-modal">&times;</button>
+            <h2>Информация о сервере</h2>
+            <div class="server-info" id="server-info">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i> Загрузка информации о сервере...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
